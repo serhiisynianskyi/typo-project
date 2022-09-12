@@ -1,0 +1,24 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  @import "./themes/light";
+  @import "./themes/dark";
+}
+
+@import "./fonts";
+@import "./variables";
+@import "./animations";
+@import "./components/header/header";
+@import "./components/header/navigation";
+@import "./components/header/controls";
+@import "./components/header/menu";
+@import "./components/main/game";
+
+body {
+  background: var(--color-primary);
+  font-family: 'Montserrat', serif;
+}
+
+* {
+  box-sizing: border-box;
+}

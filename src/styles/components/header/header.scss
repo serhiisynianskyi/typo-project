@@ -1,0 +1,21 @@
+header {
+  height: var(--header-height);
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  margin-bottom: 20px;
+  .brand-logo {
+    content: var(--logo-big);
+    color: var(--color-primary);
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    margin: 0 25px 0 0;
+    padding: 0;
+  }
+  @media (max-width: 480px) {
+    .brand-logo {
+      content: var(--logo-small);
+    }
+  }
+}

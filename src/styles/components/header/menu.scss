@@ -1,0 +1,22 @@
+.menu-icon.btn {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border: none;
+  &:hover {
+    border: none;
+  }
+  -webkit-mask: var(--logo-menu) no-repeat 100% 100%;
+  mask: var(--logo-menu) no-repeat 100% 100%;
+  background-color: var(--menu-color);
+  mask-size: cover;
+  &:hover {
+    background-color: var(--menu-color);
+  }
+  @media (min-width: 993px) {
+    display: none;
+  }
+  @media (max-width: 480px) {
+    margin-left: auto;
+  }
+}

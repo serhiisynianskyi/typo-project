@@ -1,0 +1,70 @@
+.user-icon {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  background: center var(--logo-user) no-repeat;
+}
+
+.user-controls {
+  margin-left: auto;
+  .user-controls-button {
+    width: 27px;
+    height: 27px;
+    margin: 0 10px;
+    border: none;
+    &:hover {
+      border: none;
+    }
+  }
+  .restart-button {
+    background: center var(--logo-restart) no-repeat;
+  }
+  .theme-button {
+    background: center var(--logo-theme) no-repeat;
+  }
+  .user-icon {
+    display: none;
+  }
+  &-mobile {
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    p {
+      margin: 0 0 0 20px;
+    }
+    span {
+      display: block;
+    }
+    .user-icon {
+      margin-left: 44px;
+    }
+  }
+  @media (min-width: 993px) {
+    .user-icon {
+      display: inline-block;
+    }
+    &-mobile {
+      display: none;
+    }
+  }
+  @media (max-width: 480px) {
+    position: fixed;
+    bottom: 10px;
+    justify-content: center;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin: auto;
+    &-mobile {
+      .user-icon {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.mobile-controls {
+  display: none;
+}
