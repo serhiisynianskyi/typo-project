@@ -1,0 +1,2 @@
+# typo-project
+js, scss
